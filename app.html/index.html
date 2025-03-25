@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmers Market</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Farmers Market</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profiles">Profiles</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#pricing">Real-time Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Welcome to Farmers Market</h2>
+        <p>Your one-stop platform for fresh produce, seeds, and livestock.</p>
+        <img
+          src="/imag/download (1).jpeg"
+          alt="download (1)"
+          class="feature-image"
+        />
+      </section>
+      <section id="profiles">
+        <h2>User Profiles</h2>
+        <div class="profile" id="farmer-profile">
+          <h3>Farmer Profile</h3>
+          <p>
+            Register, manage your profile, list products like tomatoes, corn
+            seeds, and livestock, and manage inventory.
+          </p>
+          <button>Register as Farmer</button>
+          <img src="/imag/image.jpeg" alt="image" class="profile-image" />
+        </div>
+        <div class="profile" id="buyer-profile">
+          <h3>Buyer Profile</h3>
+          <p>
+            Browse products, contact sellers, and place orders like fresh
+            produce and seeds.
+          </p>
+          <button>Register as Buyer</button>
+          <img src="/imag/buyer.jpeg" alt="Buyer" class="profile-image" />
+        </div>
+        <div class="profile" id="admin-profile">
+          <h3>Admin Profile</h3>
+          <p>
+            Oversee platform operations, manage users, and ensure trust and
+            safety.
+          </p>
+          <button>Login as Admin</button>
+          <img src="/imag/profile.jpeg" alt="profile" class="profile-image" />
+        </div>
+      </section>
+      <section id="listings">
+        <h2>Product Listings</h2>
+        <div class="listing">
+          <h3>Tomatoes</h3>
+          <p>Type: Fresh Produce</p>
+          <p>Quantity: 100 crates</p>
+          <p>Price: ksh3000 per crate</p>
+          <p>Quality: High</p>
+          <p>Farmer`s contact: 0712345678</p>
+          <p>location:kapbamoi,Uasin gishu</p>
+          <img src="/imag/download.jpeg" alt="download" />
+        </div>
+        <div class="listing">
+          <h3>Cabbage</h3>
+          <p>Type: vegetables</p>
+          <p>Quantity: 5000heads</p>
+          <p>Price: ksh30 per head</p>
+          <p>Quality: Medium</p>
+          <p>Farmer`s contact: 0723456789</p>
+          <p>location:Ziwa,Uasin gishu</p>
+          <img src="/imag/cabbage image.jpeg" alt="Cabbage Image" />
+        </div>
+        <div class="listing">
+          <h3>Dairy cow</h3>
+          <p>Type: freshian</p>
+          <p>Quantity: 1</p>
+          <p>Price: ksh90,000</p>
+          <p>Quality: heiver</p>
+          <p>Farmer`s contact: 0723456789</p>
+          <p>location:Ziwa,Uasin gishu</p>
+          <img src="/imag/freshian.jpeg" alt="freshian" />
+        </div>
+
+        <!-- Add more product listings as needed -->
+      </section>
+      <section id="pricing">
+        <h2>Real-time Pricing</h2>
+        <p>
+          Get the latest pricing data for different products based on demand,
+          location, and market trends.
+        </p>
+        <div id="pricing-data">
+          <!-- Real-time pricing data will be displayed here -->
+        </div>
+      </section>
+    </main>
+    <footer> 
+              <div class="footer-section" id="contact">
+            <h3>Contact</h3>
+            <p>Email: info@farmersmarket.com</p>
+            <p>Phone: +254725232323</p>
+            <p>Address: 123 Farm Lane, Agriculture City, kenya</p>
+        </div>
+        <div class="footer-section" id="menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#pricing">Real-time Pricing</a></li>
+            </ul>
+        </div>
+        <div class="footer-section" id="recent-posts">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">How to Grow Organic Tomatoes</a></li>
+                <li><a href="#">Top 10 Tips for Successful Farming</a></li>
+                <li><a href="#">Understanding Market Trends</a></li>
+            </ul>
+        </div>
+        <div class="footer-section" id="newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for the latest updates:</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+      <p>&copy; 2025 Farmers Market. All rights reserved.</p>
+    </footer>
+    <script src="appjs/index.js"></script>
+  </body>
+</html>
