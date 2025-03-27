@@ -1,0 +1,135 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+}
+
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+button.btn {
+    font-size: 16px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+button.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+button.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 15px;
+}
+
+form .form-control {
+    border-radius: 4px;
+}
+
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #e0e0e0;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.admin-only {
+    pointer-events: none;
+}
+
+.admin-only.admin {
+    pointer-events: auto;
+}

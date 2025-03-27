@@ -1,0 +1,112 @@
+{
+  "profiles": {
+    "farmers": [
+      {
+        "id": 1,
+        "name": "yelsin kiprop",
+        "products": ["Tomatoes", "wheat"]
+      }
+    ],
+    "buyers": [
+      {
+        "id": 1,
+        "name": "Evans Sang",
+        "orders": ["Tomatoes"]
+      }
+    ],
+    "admins": [
+      {
+        "id": 1,
+        "name": "Admin User"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Tomatoes",
+      "type": "Fresh Produce",
+      "category": "Vegetables",
+      "quantity": "100 crates",
+      "price": "ksh3000 each",
+      "quality": "High",
+      "location": "moiben,uasingishu",
+      "contacts": "0725232424",
+      "photos": ["images/tomato.jpeg"]
+    },
+    {
+      "id": 2,
+      "name": "wheat",
+      "category": "Cereals",
+      "quantity": "100 bags",
+      "price": "ksh 4000 each",
+      "quality": "Medium",
+      "location": "ziwa,uasingishu",
+      "contacts": "0725232424",
+      "photos": ["images/wheat.jpeg"]
+      
+    },
+    {
+      "id": 3,
+      "name": "Cow",
+      "type": "dairy freshian",
+      "category": "Livestock",
+      "quantity": "1",
+      "price": "ksh 80000",
+      "quality": "High",
+      "location": "Transzoia",
+      "contacts": "0725232424",
+      "photos": ["images/freashian.jpeg"]
+    },
+    {
+      "id": 4,
+      "name": "sheep",
+      "type": "Dorber",
+      "category": "Livestock",
+      "quantity": "5",
+      "price": "ksh 7000 each",
+      "quality": "High",
+      "location": "Moiben,Uasingishu",
+      "contacts": "0725232424",
+      "photos": ["images/dorder.jpeg"]
+    },
+    {
+      "id": 5,
+      "name": "Cabbage",
+      "type": "Gloria",
+      "category": "Vegetables",
+      "quantity": "2000 heads",
+      "price": "ksh30 per head",
+      "quality": "Medium",
+      "location": "Mois Bridge",
+      "contacts": "0725232424",
+      "photos": ["images/cabbage.jpeg"]
+    },
+    {
+      "id": 6,
+      "name": "Maize",
+      "type": "Cereal",
+      "category": "Cereals",
+      "quantity": "300 bags",
+      "price": "ksh3000 each",
+      "quality": "High",
+      "location": "Moiben,Uasingishu",
+      "contacts": "0725232424",
+      "photos": ["images/maize.jpeg"]
+    }
+  ],
+  "pricing": {
+    "Cereals": {
+      "Maize": "ksh3000 per bag",
+      "wheat": "ksh4500 per bag"
+    },
+    "Vegetables": {
+      "Tomatoes": "ksh3000 per crate",
+      "Managu": "ksh40 per kg"
+    },
+    "Livestock": {
+      "Dairy cow": "range of ksh60000 to 120000 depending on the guality",
+      "wheat": "ksh4500 per bag"
+    }
+  }
+}
