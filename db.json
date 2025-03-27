@@ -31,7 +31,7 @@
       "price": "ksh3000 each",
       "quality": "High",
       "location": "moiben,uasingishu",
-      "contacts": "0725232424",
+      "phone nod": "0725232424",
       "photos": ["images/tomato.jpeg"]
     },
     {
@@ -42,7 +42,7 @@
       "price": "ksh 4000 each",
       "quality": "Medium",
       "location": "ziwa,uasingishu",
-      "contacts": "0725232424",
+      "phone nod": "0725232424",
       "photos": ["images/wheat.jpeg"]
       
     },
@@ -55,7 +55,7 @@
       "price": "ksh 80000",
       "quality": "High",
       "location": "Transzoia",
-      "contacts": "0725232424",
+      "phone nod": "0725232424",
       "photos": ["images/freashian.jpeg"]
     },
     {
@@ -67,7 +67,7 @@
       "price": "ksh 7000 each",
       "quality": "High",
       "location": "Moiben,Uasingishu",
-      "contacts": "0725232424",
+      "phone nod": "0725232424",
       "photos": ["images/dorder.jpeg"]
     },
     {
@@ -79,7 +79,7 @@
       "price": "ksh30 per head",
       "quality": "Medium",
       "location": "Mois Bridge",
-      "contacts": "0725232424",
+      "phone nod": "0725232424",
       "photos": ["images/cabbage.jpeg"]
     },
     {
@@ -91,7 +91,7 @@
       "price": "ksh3000 each",
       "quality": "High",
       "location": "Moiben,Uasingishu",
-      "contacts": "0725232424",
+      "phone nod": "0725232424",
       "photos": ["images/maize.jpeg"]
     }
   ],
