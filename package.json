@@ -1,0 +1,19 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "Welcome to the Farmers Market Single Page Application (SPA)! This project is built using HTML, CSS, and JavaScript to create an interactive platform for farmers, buyers, and administrators to manage and browse agricultural products.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yelsin45/farmers-marketplace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yelsin45/farmers-marketplace/issues"
+  },
+  "homepage": "https://github.com/yelsin45/farmers-marketplace#readme"
+}

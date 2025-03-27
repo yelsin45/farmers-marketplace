@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Populate real-time pricing
       const pricingSection = document.getElementById("pricing-data");
-      pricingSection.innerHTML = ""; // Clear existing pricing
+      pricingSection.innerHTML = ""; 
       for (const [product, price] of Object.entries(data.pricing)) {
         const p = document.createElement("p");
         p.textContent = `${product}: ${price}`;
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Filter products by category
       window.filterCategory = function (category) {
         const itemsSection = document.getElementById("items");
-        itemsSection.innerHTML = ""; // Clear existing items
+        itemsSection.innerHTML = ""; 
         data.products.forEach((product) => {
           if (product.category === category) {
             renderProduct(product);
@@ -267,7 +267,7 @@ function closeRegistrationOptionsModal() {
   document.getElementById("registrationOptionsModal").style.display = "none";
 }
 
-
+// Functions to open and close the registration modal
 function openRegistrationModal(userType) {
   document.getElementById("userType").value = userType;
   document.getElementById("registrationModal").style.display = "block";
@@ -277,6 +277,7 @@ function closeRegistrationModal() {
   document.getElementById("registrationModal").style.display = "none";
 }
 
+// Functions to open and close the order modal
 function openOrderModal(productId) {
   document.getElementById("productId").value = productId;
   document.getElementById("orderModal").style.display = "block";
