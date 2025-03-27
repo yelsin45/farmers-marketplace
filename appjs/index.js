@@ -39,11 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       };
-
-    
-      document
-        .getElementById("postProductForm")
-        .addEventListener("submit", (event) => {
+        document.getElementById("postProductForm")
+        document.addEventListener("submit", (event) => {
           event.preventDefault();
           const productName = document.getElementById("productName").value;
           const category = document.getElementById("category").value;
@@ -74,11 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
             reader.readAsDataURL(image);
           }
         });
-
-      
-      document
-        .getElementById("orderForm")
-        .addEventListener("submit", (event) => {
+      document.getElementById("orderForm")
+      document.addEventListener("submit", (event) => {
           event.preventDefault();
           const productId = document.getElementById("productId").value;
           const buyerName = document.getElementById("buyerName").value;
@@ -131,6 +125,10 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       window.initMap = function (location) {
+        if (typeof google === "undefined") {
+          console.error("Google Maps API is not loaded.");
+          return;
+        } 
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 15,
           center: { lat: -34.397, lng: 150.644 },
@@ -173,30 +171,28 @@ document.addEventListener("DOMContentLoaded", function () {
       
       data.products.forEach((product) => renderProduct(product));
     });
+     const farmerProfileButton = document.querySelector("#farmer-profile button");
+  const buyerProfileButton = document.querySelector("#buyer-profile button");
+  const adminProfileButton = document.querySelector("#admin-profile button");
 
-
-  document
-    .getElementById("farmer-profile")
-    .querySelector("button")
-    .addEventListener("click", () => {
+  if (farmerProfileButton) { 
+    farmerProfileButton.addEventListener("click", () => {
       openRegistrationModal("farmer");
     });
+  }
 
-  document
-    .getElementById("buyer-profile")
-    .querySelector("button")
-    .addEventListener("click", () => {
+  if (buyerProfileButton) {
+    buyerProfileButton.addEventListener("click", () => {
       openRegistrationModal("buyer");
     });
+  }
 
-  document
-    .getElementById("admin-profile")
-    .querySelector("button")
-    .addEventListener("click", () => {
+  if (adminProfileButton) { 
+    adminProfileButton.addEventListener("click", () => {
       openLoginModal();
     });
+  }
 
-  
   document.getElementById("loginForm").addEventListener("submit", (event) => {
     event.preventDefault();
     const username = document.getElementById("username").value;
@@ -205,9 +201,8 @@ document.addEventListener("DOMContentLoaded", function () {
     closeLoginModal();
   });
 
-  document
-    .getElementById("registrationForm")
-    .addEventListener("submit", (event) => {
+    document.getElementById("registrationForm")
+    document.addEventListener("submit", (event) => {
       event.preventDefault();
       const userType = document.getElementById("userType").value;
       const name = document.getElementById("name").value;
