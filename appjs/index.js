@@ -258,15 +258,6 @@ function showSection(sectionId) {
   });
 }
 
-// Functions to open and close the login modal
-function openLoginModal() {
-  document.getElementById("loginModal").style.display = "block";
-}
-
-function closeLoginModal() {
-  document.getElementById("loginModal").style.display = "none";
-}
-
 // Functions to open and close the registration options modal
 function openRegistrationOptions() {
   document.getElementById("registrationOptionsModal").style.display = "block";
@@ -276,22 +267,3 @@ function closeRegistrationOptionsModal() {
   document.getElementById("registrationOptionsModal").style.display = "none";
 }
 
-// Functions to open and close the registration modal
-function openRegistrationModal(userType) {
-  document.getElementById("userType").value = userType;
-  document.getElementById("registrationModal").style.display = "block";
-}
-
-function closeRegistrationModal() {
-  document.getElementById("registrationModal").style.display = "none";
-}
-
-// Functions to open and close the order modal
-function openOrderModal(productId) {
-  document.getElementById("productId").value = productId;
-  document.getElementById("orderModal").style.display = "block";
-}
-
-function closeOrderModal() {
-  document.getElementById("orderModal").style.display = "none";
-}
