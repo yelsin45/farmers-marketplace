@@ -213,15 +213,6 @@ document.addEventListener("DOMContentLoaded", function () {
         username: email, 
       };
 
-      data.users.push(user);
-      localStorage.setItem("users", JSON.stringify(data.users));
-      localStorage.setItem("user", JSON.stringify(user));
-      alert("Registration successful!");
-      closeRegistrationModal();
-      document.getElementById("user-name").textContent = user.name;
-      document.getElementById("user-email").textContent = user.email;
-      document.getElementById("user-phone").textContent = user.phone;
-      document.getElementById("user-details").style.display = "block";
     });
 });
 function showSection(sectionId) {
