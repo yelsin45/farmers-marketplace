@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
       data.products = fetchedData.products;
       data.pricing = fetchedData.pricing;
 
-      // Populate real-time pricing
       const pricingSection = document.getElementById("pricing-data");
       pricingSection.innerHTML = ""; 
       for (const [product, price] of Object.entries(data.pricing)) {
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         pricingSection.appendChild(p);
       }
 
-      // Filter products by category
       window.filterCategory = function (category) {
         const itemsSection = document.getElementById("items");
         itemsSection.innerHTML = "";
@@ -42,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       };
 
-      // Add Search Products Functionality
       window.searchProducts = function () {
         const searchTerm = document
           .getElementById("searchInput")
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       };
 
-      // Event listener for post product form submission
         document.getElementById("postProductForm")
         document.addEventListener("submit", (event) => {
           event.preventDefault();
@@ -93,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
 
-      // Event listener for order form submission
         document.getElementById("orderForm")
         document.addEventListener("submit", (event) => {
           event.preventDefault();
@@ -112,13 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
             quantity: quantity,
             address: address,
           };
-          // Simulate order processing
+      
           alert("Order placed successfully!");
           document.getElementById("orderForm").reset();
           closeOrderModal();
         });
-
-      // Show product description
       window.showDescription = function (productId) {
         const product = data.products.find((p) => p.id === productId);
         const descriptionSection = document.getElementById("item-description");
@@ -136,8 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
         descriptionSection.style.display = "block";
         initMap(product.location);
       };
-
-      // Delete product
       window.deleteProduct = function (productId) {
         const productIndex = data.products.findIndex((p) => p.id === productId);
         if (productIndex > -1) {
@@ -148,8 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
           );
         }
       };
-
-     
 
       function renderProduct(product) {
         const itemsSection = document.getElementById("items");
@@ -165,24 +154,19 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         itemsSection.appendChild(itemDiv);
       }
-
-      // Initial render of all products
       data.products.forEach((product) => renderProduct(product));
     });
 
-  // Event listeners for profile buttons
     document.getElementById("farmer-profile")
     document.querySelector("button")
     document.addEventListener("click", () => {
       openRegistrationModal("farmer");
     });
-
     document.getElementById("buyer-profile")
     document.querySelector("button")
     document.addEventListener("click", () => {
       openRegistrationModal("buyer");
     });
-
 
     document.getElementById("admin-profile")
     document.querySelector("button")
@@ -190,13 +174,11 @@ document.addEventListener("DOMContentLoaded", function () {
       openLoginModal();
     });
 
-  // Login form submission
   document.getElementById("loginForm").addEventListener("submit", (event) => {
     event.preventDefault();
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    // Validate login credentials
     const user = data.users.find(
       (user) => user.username === username && user.password === password
     );
@@ -213,8 +195,6 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Invalid username or password.");
     }
   });
-
-  // Registration form submission
     document.getElementById("registrationForm")
     document.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -230,10 +210,9 @@ document.addEventListener("DOMContentLoaded", function () {
         email: email,
         phone: phone,
         password: password,
-        username: email, // Use email as username
+        username: email, 
       };
 
-      // Store user information in local storage
       data.users.push(user);
       localStorage.setItem("users", JSON.stringify(data.users));
       localStorage.setItem("user", JSON.stringify(user));
@@ -245,8 +224,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("user-details").style.display = "block";
     });
 });
-
-// Function to show and hide sections
 function showSection(sectionId) {
   const sections = document.querySelectorAll(".section");
   sections.forEach((section) => {
@@ -257,12 +234,9 @@ function showSection(sectionId) {
     }
   });
 }
-
-// Functions to open and close the registration options modal
 function openRegistrationOptions() {
   document.getElementById("registrationOptionsModal").style.display = "block";
 }
-
 function closeRegistrationOptionsModal() {
   document.getElementById("registrationOptionsModal").style.display = "none";
 }
